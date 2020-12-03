@@ -21,7 +21,7 @@ The training models determine which voices can be recognised and this is limited
 The Docker command needs a local folder mounted which contains the audio file to be transcribed:
 
 ```
-docker run --rm -v "$PWD/audio:/audio" -ti audio-transcribe-mozilla-deepspeech-0-9-1 test-short.mp3
+docker run --rm -v "$PWD/audio:/audio" -ti gencore/audio-transcribe-mozilla-deepspeech test-short.mp3
 ```
 
 This will output the transcription to the command line.
