@@ -11,11 +11,11 @@ RUN pip install deepspeech==0.9.1
 RUN mkdir deepspeech
 
 # Model files; the pbmm file is aimed at faster systems
-RUN wget -O /deepspeech/model.pbmm https://github.com/mozilla/DeepSpeech/releases/download/v0.9.1/deepspeech-0.9.1-models.pbmm
+RUN wget --no-verbose -O /deepspeech/model.pbmm https://github.com/mozilla/DeepSpeech/releases/download/v0.9.1/deepspeech-0.9.1-models.pbmm
 #COPY deepspeech-0.9.1-models.pbmm /deepspeech/model.pbmm
 
 # Scorer files; required by the engine
-RUN wget -O /deepspeech/scorer https://github.com/mozilla/DeepSpeech/releases/download/v0.9.1/deepspeech-0.9.1-models.scorer
+RUN wget --no-verbose -O /deepspeech/scorer https://github.com/mozilla/DeepSpeech/releases/download/v0.9.1/deepspeech-0.9.1-models.scorer
 #COPY deepspeech-0.9.1-models.scorer /deepspeech/scorer
 
 ARG VERSION
