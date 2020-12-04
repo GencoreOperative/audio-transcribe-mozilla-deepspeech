@@ -14,7 +14,7 @@ RUN mkdir deepspeech
 RUN wget -O /deepspeech/model.pbmm https://github.com/mozilla/DeepSpeech/releases/download/v0.9.1/deepspeech-0.9.1-models.pbmm
 #COPY deepspeech-0.9.1-models.pbmm /deepspeech/model.pbmm
 
-# Scorer files
+# Scorer files; required by the engine
 RUN wget -O /deepspeech/scorer https://github.com/mozilla/DeepSpeech/releases/download/v0.9.1/deepspeech-0.9.1-models.scorer
 #COPY deepspeech-0.9.1-models.scorer /deepspeech/scorer
 
