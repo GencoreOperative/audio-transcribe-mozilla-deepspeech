@@ -1,7 +1,7 @@
 Some areas for expansion on this utility project.
 
-Progress
----
+# Progress Indicator
+
 Consider support for progress indication on the output. The engine appears to take a different amount of time depending on the voice that is speaking. More test data is needed before we could build any prediction on how long it would take.
 
 ```
